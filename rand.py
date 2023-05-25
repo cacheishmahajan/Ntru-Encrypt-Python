@@ -1,6 +1,7 @@
 import random
 
-def randpol(positives,negatives,size):
+
+def randpol(positives, negatives, size):
     output = [0]*size
     for i in range(positives+negatives):
         if i < positives:
@@ -9,4 +10,3 @@ def randpol(positives,negatives,size):
             output[i] = -1
     random.shuffle(output)
     return output
-
